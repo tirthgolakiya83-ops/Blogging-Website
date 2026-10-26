@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Story — BlogSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Blog<span>Sphere.</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#explore">Explore</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="icon-button" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+            <a href="editor.html" class="button button-primary">+ Write a blog</a>
+        </div>
+    </div>
+</header>
+
+<main class="post-page container">
+    <a href="index.html" class="back-link">← Back to all stories</a>
+    <article id="postContainer" class="article-container">
+        <p class="muted">Loading story...</p>
+    </article>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a href="index.html" class="logo">Blog<span>Sphere.</span></a>
+        <p>A little space for big ideas.</p>
+        <span class="footer-copy">© <span id="currentYear"></span> BlogSphere</span>
+    </div>
+</footer>
+
+</body>
+</html>

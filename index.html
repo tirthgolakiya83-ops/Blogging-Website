@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover interesting stories, ideas, and articles on BlogSphere.">
+    <title>BlogSphere — Stories Worth Sharing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Blog<span>Sphere.</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-active">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-button" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+            <a href="editor.html" class="button button-primary nav-create">+ Write a blog</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero container">
+        <div class="hero-text">
+            <span class="eyebrow"><span class="status-dot"></span> YOUR SPACE FOR IDEAS</span>
+            <h1>Every story<br>has a <span>place.</span></h1>
+            <p class="hero-description">
+                Discover fresh perspectives, share what you know,
+                and turn your ideas into stories worth reading.
+            </p>
+
+            <div class="hero-actions">
+                <a href="editor.html" class="button button-primary">Start writing <span>↗</span></a>
+                <a href="#explore" class="button button-secondary">Explore stories</a>
+            </div>
+
+            <div class="hero-note">
+                <span class="avatar-stack"><span>✦</span><span>✎</span><span>♡</span></span>
+                <span>A little space for big ideas.</span>
+            </div>
+        </div>
+
+        <div class="hero-art">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-card">
+                <span class="art-label">A NOTE TO SELF</span>
+                <div class="art-symbol">✳</div>
+                <h2>Make room<br>for curiosity.</h2>
+                <div class="art-bottom">
+                    <span>Ideas begin somewhere.</span>
+                    <span>✦</span>
+                </div>
+            </div>
+            <span class="floating-star star-one">✳</span>
+            <span class="floating-star star-two">✦</span>
+            <span class="floating-note">Think. Write. Share.</span>
+        </div>
+    </section>
+
+    <section class="container explore-section" id="explore">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">THE READING ROOM</span>
+                <h2>Find your next read.</h2>
+                <p class="muted">Good ideas are meant to be discovered.</p>
+            </div>
+            <a href="editor.html" class="text-link">Write a story ↗</a>
+        </div>
+
+        <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input type="search" id="searchInput"
+                   placeholder="Search stories, topics, or authors..."
+                   aria-label="Search blogs">
+            <button id="clearSearch" class="clear-search" hidden>Clear</button>
+        </div>
+
+        <div class="filter-row">
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-chip active" data-category="All">All stories</button>
+                <button class="filter-chip" data-category="Technology">Technology</button>
+                <button class="filter-chip" data-category="Travel">Travel</button>
+                <button class="filter-chip" data-category="Lifestyle">Lifestyle</button>
+                <button class="filter-chip" data-category="Education">Education</button>
+                <button class="filter-chip" data-category="Business">Business</button>
+            </div>
+            <button id="bookmarksFilter" class="filter-chip saved-filter">♡ Saved</button>
+        </div>
+
+        <div class="stories-heading">
+            <h3 id="resultsTitle">Latest stories <span class="heading-spark">✳</span></h3>
+            <span id="blogCount" class="muted"></span>
+        </div>
+
+        <div id="blogContainer" class="blog-grid"></div>
+
+        <div id="noBlogs" class="empty-state" hidden>
+            <div class="empty-icon">⌕</div>
+            <h3>No stories found</h3>
+            <p>Try another search or choose a different category.</p>
+            <button id="resetFilters" class="button button-secondary">Show all stories</button>
+        </div>
+    </section>
+
+    <section class="write-banner container" id="about">
+        <div>
+            <span class="eyebrow">YOUR IDEAS BELONG HERE</span>
+            <h2>Have something<br>on your mind?</h2>
+            <p>Start with a thought. Turn it into a story. Share it with the world.</p>
+        </div>
+        <a href="editor.html" class="button button-light">Write your first story ↗</a>
+        <span class="banner-decoration">✳</span>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a href="index.html" class="logo">Blog<span>Sphere.</span></a>
+        <p>A little space for big ideas.</p>
+        <span class="footer-copy">© <span id="currentYear"></span> BlogSphere</span>
+    </div>
+</footer>
+
+</body>
+</html>
